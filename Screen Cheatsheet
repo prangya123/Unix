@@ -1,0 +1,42 @@
+Basics	
+	
+•	Start a new session with session name:
+                            screen -S <session_name>
+
+•	List running sessions / screens:
+                            screen -ls
+
+•	Attach to a running session:
+                            screen -x
+
+•	Attach to a running session with name:
+                            screen -r <session_name>
+
+•	Detach a running session:
+                            screen -d <session_name>
+
+•	Validate the screen session:
+                            echo $STY or echo $TERM
+
+•	Lists the processes inside screens:
+                            ps -e |grep <screen_pid>
+	
+	
+	
+Description	Command
+•	detach	                                        		
+        Ctrl-a d
+
+•	detach and logout (quick exit)	                	
+        Ctrl-a D D
+
+•	exit screen
+        Ctrl-a : quit or exit all of the programs in screen.
+
+•	force-exit screen
+        Ctrl-a C-\ (not recommended)
+	
+	
+	
+Help	Command
+•	See help	Ctrl-a ? (Lists keybindings)
