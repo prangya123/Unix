@@ -40,3 +40,17 @@ Description	Command
 	
 Help	Command
 •	See help	Ctrl-a ? (Lists keybindings)
+•	man screen
+
+
+
+To kill a screen session, there are various ways:
+1) send a 'quit' command:
+
+	screen -X -S "sessionname" quit
+	screen -X -S "PID" quit
+	
+2) send a Ctrl-C to a screen session running a script:
+
+	screen -X -S "sessionname" stuff "^C"
+3) To validate, run screen -ls
